@@ -87,6 +87,7 @@ namespace ConsoleBlackjack
             {
                 Console.Write("Would you like to {h}it or {s}tand? ");
                 var answer = Console.ReadLine();
+                Console.WriteLine();
                 if (answer == "h" || answer == "H")
                 {
                     playerHand.Add(d.NextCard());

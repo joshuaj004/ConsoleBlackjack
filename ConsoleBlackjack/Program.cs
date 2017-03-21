@@ -13,6 +13,19 @@ namespace ConsoleBlackjack
             Console.WriteLine("Hello Blackjack!");
             Game g = new ConsoleBlackjack.Game();
             g.Round();
+            while (true)
+            {
+                Console.WriteLine();
+                Console.Write("Play again? (Y/N) ");
+                String response = Console.ReadLine();
+                if (response == "y" || response == "Y")
+                {
+                    g.Round();
+                } else
+                {
+                    return;
+                }
+            }
         }
     }
 }
