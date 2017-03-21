@@ -11,12 +11,8 @@ namespace ConsoleBlackjack
         static void Main(string[] args)
         {
             Console.WriteLine("Hello Blackjack!");
-            Deck d = new Deck();
-            Console.WriteLine(d.NextCard());
-            Console.WriteLine(d.NextCard());
-            Console.WriteLine(d.NextCard());
-            Console.WriteLine(d.NextCard());
-            Console.WriteLine(d.NextCard());
+            Game g = new ConsoleBlackjack.Game();
+            g.Round();
         }
     }
 }
